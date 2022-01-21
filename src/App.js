@@ -1,8 +1,6 @@
 import React from 'react';
-import GlobalStyle from './globalStyles';
+import {GlobalStyle} from './globalStyles';
 import Home from './pages/HomePage/Home';
-// import Services from './pages/Services/Services';
-// import Products from './pages/Products/Products';
 import Dao from './pages/DAO/Dao';
 import Metavers from './pages/Metaverse/Metaverse';
 import SuperMarket from './pages/SuperMarket/Supermarket';
@@ -10,10 +8,21 @@ import Chain from './pages/Chain/Chain';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { Navbar, Footer } from './components';
+// import { FaConnectdevelop } from 'react-icons/fa';
+import fav from './images/fav.svg';
+
+import Helmet from 'react-helmet';
+const TITLE = 'MetaverseDAO'
 
 function App() {
   return (
+    
     <Router>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name='a' content='a'/>
+        <link rel='icon' type='image/x-icon' data-react-helmet="true" href={fav} sizes='16x16' />
+      </Helmet>
       <GlobalStyle />
       <ScrollToTop />
       <Navbar />
