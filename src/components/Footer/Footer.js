@@ -1,5 +1,6 @@
 import React from 'react';
 // import { Button } from '../../globalStyles';
+import {SiGmail} from 'react-icons/si';
 import {
   // FaFacebook,
   FaInstagram,
@@ -9,6 +10,8 @@ import {
   FaTelegram,
   FaGithub
 } from 'react-icons/fa';
+
+
 import {
   FooterContainer,
   // FooterSubscription,
@@ -56,24 +59,6 @@ function Footer() {
           </FooterLinkItems> */}
 
           {/* <FooterLinkItems>
-            <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink to='/'>Contact</FooterLink>
-            <FooterLink to='/'>Support</FooterLink>
-            <FooterLink to='/'>Destinations</FooterLink>
-            <FooterLink to='/'>Sponsorships</FooterLink>
-          </FooterLinkItems>
-        </FooterLinksWrapper> */}
-
-        {/* <FooterLinksWrapper>
-          <FooterLinkItems>
-            <FooterLinkTitle>Videos</FooterLinkTitle>
-            <FooterLink to='/'>Submit Video</FooterLink>
-            <FooterLink to='/'>Ambassadors</FooterLink>
-            <FooterLink to='/'>Agency</FooterLink>
-            <FooterLink to='/'>Influencer</FooterLink>
-          </FooterLinkItems> */}
-
-          {/* <FooterLinkItems>
             <FooterLinkTitle>Social Media</FooterLinkTitle>
             <FooterLink to='/'>Instagram</FooterLink>
             <FooterLink to='/'>Facebook</FooterLink>
@@ -90,14 +75,6 @@ function Footer() {
           </SocialLogo>
           <WebsiteRights>MetaverseDAO © 2022</WebsiteRights>
           <SocialIcons>
-            {/* <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-              <FaFacebook />
-            </SocialIconLink> */}
-            {/* <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-              <FaInstagram />
-            </SocialIconLink> */}
-
-            {/* Instagram */}
             <SocialIconLink
               href={
                 'https://github.com/HeroMetaverse'
@@ -153,12 +130,16 @@ function Footer() {
               <FaTwitter />
             </SocialIconLink>
 
-            {/* <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
-              <FaTwitter />
-            </SocialIconLink> */}
-            {/* <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
-              <FaLinkedin />
-            </SocialIconLink> */}
+            <SocialIconLink
+              href={
+                'mailto:herometaversedao@gmail.com'
+              }
+              rel='noopener noreferrer'
+              target='_blank'
+              aria-label='Twitter'
+            >
+              <SiGmail />
+            </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
       </SocialMedia>
