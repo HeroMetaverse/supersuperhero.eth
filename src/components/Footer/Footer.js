@@ -132,7 +132,7 @@ function Footer() {
 
             <SocialIconLink
               href={
-                'mailto:administrator@metaversedao.cx'
+                'mailto:contact@metaversedao.cx'
               }
               rel='noopener noreferrer'
               target='_blank'
